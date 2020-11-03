@@ -1,0 +1,390 @@
+@media (max-width: 1175px) {
+  // Solution start //
+  .solution { 
+    padding-bottom: 100px;
+  }
+  // Solution end //
+  
+  // Automation & Dashboard start //
+  .automation, 
+  .dashboard { 
+    padding-bottom: 100px;
+
+    .inner-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .text { 
+      text-align: center;
+    }
+
+    .title-black {
+      text-align: center;
+    }
+    
+    .row { 
+      justify-content: center;
+    }
+
+    .feature-img {
+      margin-top: 100px;
+    }
+
+    .images-box {
+      .dashboard-black-img,
+      .dashboard-white-img {
+        position: static;
+        margin: 100px 20px 0;
+      }
+    }
+  }
+
+  .dashboard {
+    .inner-wrapper {
+      flex-direction: column;
+    }
+  }
+  // Automation & Dashboard end //
+
+  // Plans start //
+  .plans { 
+    padding: 100px 0;
+
+    .pricing { 
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .title-black,
+    .text { 
+      text-align: center;
+    }
+
+    .row { 
+      justify-content: center;
+    }
+
+    .cards { 
+      margin-top: 50px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .card {
+      margin: 0 20px;
+    }
+
+    .feedback { 
+      margin-top: 50px;
+    }
+
+    .title { 
+      text-align: center;
+    }
+
+    .reviews { 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  // Plans end //
+
+  // Support start //
+  .support { 
+    padding: 100px 0;
+
+    &-container { 
+      flex-direction: column-reverse;
+    }
+
+    .text-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 30px 0;
+    }
+
+    .title-black {
+      text-align: center;
+    }
+    
+    .row {
+      justify-content: center;
+    }
+
+    .text-content { 
+      .text {
+        text-align: center;
+      }
+    }
+
+    .items {
+      margin-top: 100px;
+    }
+  }
+  // Support end // 
+}
+
+@media (max-width: 1025px) {
+  // Intro start //
+  .intro {
+    .product-preview-img { 
+      width: 100%;
+    }
+  }
+  // Intro end //
+
+  // Reward start //
+
+  .reward { 
+    padding: 100px 0 100px;
+
+    &-container { 
+      flex-direction: column-reverse;
+    }
+
+    .title-white,
+    .text { 
+      text-align: center;
+    }
+
+    .row {
+      justify-content: center;
+    }
+
+    img {
+      margin-top: 100px;
+    }
+  }
+  // Reward end //
+}
+
+@media (max-width: 960px) {
+  // Partners start //
+  .partners { 
+    .brands { 
+      margin: 45px 0 100px; 
+      flex-wrap: wrap;
+      justify-content: center;
+
+      img {
+        margin: 20px 30px;
+      }
+    }
+  }
+  // Partners end //
+
+  // Solution start //
+  .solution { 
+    padding-bottom: 100px;
+
+    .cards { 
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 80px;
+    }
+
+    .card { 
+      margin: 20px 20px;
+    }
+  }
+  // Solution end //
+
+  // Automation & Dashboard start //
+  .dashboard {
+    .images-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  // Automation & Dashboard end //
+
+  // Benefits start //
+  .benefits { 
+    padding-bottom: 100px;
+
+    &-box { 
+      justify-content: center;
+    }
+
+    .item { 
+      margin: 100px 20px 0;
+    }
+  }
+  // Benefits end //
+}
+
+@media (max-width: 780px) {
+  // Header start //
+  .header {
+    .menu {
+      display: none;
+    }
+
+    .burger-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  // Header end //
+
+  // Intro start //
+  .intro { 
+    .text { 
+      width: 100%;
+    }
+  }
+  // Intro end //
+
+  // Banner start //
+  .banner {
+    .title-white {
+      width: 100%;
+    }
+  }
+  // Banner end //
+}
+
+@media (max-width: 690px) {
+  // Automation & Dashboard start //
+  .dashboard,
+  .automation {
+    .text-content {
+      width: 100%;
+    } 
+  }
+  // Automation & Dashboard end //
+
+  // Reward start //
+  .reward { 
+    .text-content {
+      width: 100%;
+    }
+  }
+  // Reward end //
+
+  // Plans start //
+  .plans { 
+    .cards { 
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      margin: 30px 0;
+    }
+
+    .text-content {
+      width: 100%;
+    }
+
+    .blockquote {
+      width: 100%;
+    }
+  }
+  // Plans end //
+
+  // Support start //
+  .support { 
+
+    .items {
+      flex-direction: column-reverse;
+      height: 100%;
+      align-items: center;
+      margin-top: 50px;
+      width: 100%;
+    }
+
+    .item {
+      position: static;
+      margin: 50px auto;
+    }
+
+    img {
+      display: none;
+    }
+  }
+  // Support end // 
+
+  // Banner start //
+  .banner {
+    .title-white {
+      font-size: 40px;
+    }
+  }
+  // Banner end //
+
+  // Footer start //
+  .footer {
+    .useful-links {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .col {
+      width: 40%;
+      margin-bottom: 40px;
+    }
+
+    .copyright {
+      margin-top: 50px;
+      flex-direction: column-reverse;
+
+      .text {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 50px;
+        width: 100%;
+      }
+
+      img {
+        display: none;
+      }
+
+      .social-links {
+        a {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+  // Footer end //
+}
+
+@media (max-width: 570px) {
+  // Intro start //
+  .intro { 
+    .row { 
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .btn {
+      margin: 10px 0;
+    }
+  }
+  // Intro end //
+}
+
+@media (max-width: 530px) {
+  // Automation & Dashboard start //
+  .automation {
+    .feature-img {
+      width: 100%;
+    } 
+  }
+  // Automation & Dashboard end //
+
+  // Reward start //
+  .reward { 
+    img {
+      width: 100%;
+    }
+  }
+  // Reward end //
+}

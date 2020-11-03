@@ -1,0 +1,89 @@
+.container {
+  max-width: $container-width;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.item-title {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'Didact Gothic', sans-serif;
+  color: $blue;
+}
+
+.text {
+  font-size: 18px;
+  color: $grey;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+  font-size: 16px;
+  color: $white;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 6px;
+  transition: all ease 0.5s;
+
+  &:hover {
+    border-radius: 40px;
+  }
+}
+
+.btn-blue {
+  background-color: $blue;
+}
+
+.btn-green {
+  background-color: $green;
+}
+
+.btn-pink {
+  background-color: $pink;
+}
+
+.btn-grey {
+  background-color: $grey;
+}
+
+.title-white,
+.title-black {
+  font-size: 50px;
+  color: $white;
+  font-weight: 400;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.title-black {
+  color: $grey;
+}
+
+.row {
+  display: flex;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-blue {
+  color: $blue;
+}
+
+.text-pink {
+  color: $pink;
+}
+
+.text-green {
+  color: $green;
+}
+
+.text-grey {
+  color: $grey;
+}
+
+.text-light-grey {
+  color: $light-grey;
+}

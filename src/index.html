@@ -4,10 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Start-up agency</title>
-    <!-- inject:css -->
-    <!-- endinject -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="shortcut icon" href="./favicon.png" type="image/png">
+  <!-- inject:css -->
+  <!-- endinject -->
 </head>
 <body>
-  <div class="wrapper"></div>
+  <div class="wrapper">
+    @@include('templates/mobile-menu.html')
+    @@include('templates/header.html')
+    <div class="content">
+      @@include('templates/intro-section.html')
+      @@include('templates/partners-section.html')
+      @@include('templates/solution-section.html')
+      @@include('templates/automation-section.html')
+      @@include('templates/dashboard-section.html')
+      @@include('templates/benefits-section.html')
+      @@include('templates/reward.html')
+      @@include('templates/plans-section.html')
+      @@include('templates/support-section.html')
+      @@include('templates/banner-section.html')
+    </div>
+    @@include('templates/footer.html')
+    <div class="fast-scroll">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+  </div>
+  <!-- inject:js -->
+  <!-- endinject -->
 </body>
 </html>
