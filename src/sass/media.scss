@@ -36,6 +36,7 @@
       .dashboard-white-img {
         position: static;
         margin: 100px 20px 0;
+        box-shadow: 0px 0px 30px 4px rgba(0,0,0,0.07);
       }
     }
   }
@@ -303,10 +304,15 @@
     .item {
       position: static;
       margin: 50px auto;
+      box-shadow: 0px 6px 30px 4px rgba(0,0,0,0.07);
     }
 
     img {
       display: none;
+    }
+
+    .text-content {
+      width: 100%;
     }
   }
   // Support end // 
@@ -367,6 +373,10 @@
     .btn {
       margin: 10px 0;
     }
+
+    .product-preview-img { 
+      box-shadow: 0px 0px 30px 4px rgba(0,0,0,0.07);
+    }
   }
   // Intro end //
 }
@@ -387,4 +397,57 @@
     }
   }
   // Reward end //
+}
+
+@media (max-width: 450px) {
+  // Automation & Dashboard start //
+  .dashboard {
+    .dashboard-black-img,
+    .dashboard-white-img {
+      width: 100%;
+    } 
+  }
+  // Automation & Dashboard end //
+}
+
+@media (max-width: 400px) {
+  // Automation & Dashboard & Plans start //
+  .automation, 
+  .dashboard,
+  .plans { 
+    .row { 
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .btn-more,
+    .btn-yearly {
+      margin: 30px 0 0;
+    }
+  }
+  // Automation & Dashboard & Plans end //
+
+  // Support start //
+  .support { 
+    .item {
+      width: 100%;
+    }
+  }
+  // Support end // 
+}
+
+@media (max-width: 365px) {
+  // Support start //
+  .support { 
+    .item {
+      flex-direction: column;
+      padding: 30px 0 0;
+    }
+
+    .item-title,
+    .text {
+      text-align: center;
+    }
+  }
+  // Support end // 
 }

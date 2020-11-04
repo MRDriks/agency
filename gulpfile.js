@@ -15,7 +15,7 @@ sass.compiler = require('node-sass');
 function browserSyncInit(done) {
   browsersync.init({
     server: {
-      baseDir: 'dist'
+      baseDir: 'docs'
     },
     port: 8000
   });
@@ -28,21 +28,21 @@ function browserSyncReload(done) {
   done();
 }
 
-// Clean dist directory
+// Clean docs directory
 function clean() {
-  return del('dist')
+  return del('docs')
 }
 
 function fonts() {
   return gulp
     .src('src/fonts/*')
-    .pipe(gulp.dest('dist/fonts'));
+    .pipe(gulp.dest('docs/fonts'));
 }
 
 function js() {
   return gulp
     .src('src/js/*.js')
-    .pipe(gulp.dest('dist/js'));
+    .pipe(gulp.dest('docs/js'));
 }
 
 function jsminify() {
@@ -52,19 +52,19 @@ function jsminify() {
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('dist/js'));
+    .pipe(gulp.dest('docs/js'));
 }
 
 function images() {
   return gulp
     .src('src/img/*.{jpg,png}')
-    .pipe(gulp.dest('dist/img'));
+    .pipe(gulp.dest('docs/img'));
 }
 
 function favicon() {
   return gulp
     .src('src/favicon.png')
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('docs'));
 }
 
 function css() {
@@ -79,7 +79,7 @@ function css() {
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('dist/css'));
+    .pipe(gulp.dest('docs/css'));
 }
 
 function html() {
@@ -88,15 +88,15 @@ function html() {
     .pipe(include({
       prefix: '@@'
     }))
-    .pipe(inject(gulp.src(['dist/css/*', 'dist/js/*'], {read: false}), {ignorePath: 'dist', addRootSlash: false}))
-    .pipe(gulp.dest('dist'));
+    .pipe(inject(gulp.src(['docs/css/*', 'docs/js/*'], {read: false}), {ignorePath: 'docs', addRootSlash: false}))
+    .pipe(gulp.dest('docs'));
 }
 
 function htmlminify() {
   return gulp
-    .src('dist/index.html')
+    .src('docs/index.html')
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('docs'));
 }
 
 function watchFiles() {
